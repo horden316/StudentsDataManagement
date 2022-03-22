@@ -23,7 +23,7 @@ contract extrawork1{
     }
 
     uint indexcount=0; //拿來當索引值＆mapping的key
-    mapping(uint => Student) public StudentMap;
+    mapping(uint => Student) StudentMap;
 
 
     //將值塞入mapping中，塞完一次後indexcount+1
