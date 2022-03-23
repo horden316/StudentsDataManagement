@@ -1,7 +1,7 @@
 /*
 author: horden.eth
 */
-pragma solidity ^0.4.22;
+pragma solidity ^0.8.13;
 contract extrawork1{
 
     struct  Student {
