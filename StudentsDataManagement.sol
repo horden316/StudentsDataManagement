@@ -1,6 +1,8 @@
 /*
 author: horden.eth
 */
+
+//SPDX-License-Identifier: SimPL-2.0
 pragma solidity ^0.8.13;
 contract extrawork1{
 
@@ -13,7 +15,7 @@ contract extrawork1{
     }
 
     address owner;
-    constructor ( address initOwner) public {
+    constructor ( address initOwner) {
     owner = initOwner;
     }
 
@@ -37,7 +39,6 @@ contract extrawork1{
         for(uint i=0;i<indexcount;i++){
             if(StudentMap[i].walletaddress==SearchAddress){
                 return i;
-                break;
             }
         }
     }
@@ -47,7 +48,6 @@ contract extrawork1{
         for(uint i=0;i<indexcount;i++){
             if(keccak256(abi.encodePacked(StudentMap[i].ID))==keccak256(abi.encodePacked(SearchID))){
                 return i;
-                break;
             }
         }
     }
